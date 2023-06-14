@@ -25,19 +25,30 @@ We will create 3 EC2 instances: Jenkins, Docker and Sonarqube
 
 **4: Create a freestyle job**
 
+
+**5: Create a Webhook**
+
+With webhook, whenever the developper make a change on the code or repository, it will trigger the jenkins automatically and jenkins will pull the code from the github
+
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/b8ff49db-7a83-4b93-9782-698d51fa7db5)
 
 ![2](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/524f89e3-c513-4183-bac7-1601b1241b0d)
 
 ![3](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/958185d5-2de0-4b73-a36b-84a6f31cf6e9)
 
-**5: Build our project**
+**6: Build our project**
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/1de3fc80-5fd1-4c61-9c9b-b7963dcb60a8)
 
-**6: Check if our webhook is working**
+**6: Connect to our Sonarqube server and install Sonarqube**
 
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/478a5163-1816-440e-91fd-ae39b357804d)
 
+- update the repository and install Java 17 which is compatible with Sonarqube
+
+- Go to sonarqube.com and download the community Edition with wget link
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/18938f91-a5d7-4f51-a05c-252cc4bc8a42)
 
 
 
