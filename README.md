@@ -11,22 +11,21 @@
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/4ceee428-8d7a-4d1c-9571-032197fd4294)
 
-We will create 3 EC2 instances: Jenkins, Docker and Sonarqube
+We will create 3 EC2 instances: Jenkins, Sonarqube and Docker
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/a22effac-0f84-4aa5-a518-8c2c6ba83463)
 
 **3: Connect to the instances using the public IP and Mobaxterm**
 
-- Connect to the Jenkins Server and install jenkins
+**4: Update the Jenkins server and install Jenkins
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/f1bd5025-6e5a-43e9-8419-297afb8dba5a)
 
+**5: Set up the Jenkins server and Create a freestyle job**
+
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/b06d14be-354d-4e5a-a459-a56f9a744153)
 
-**4: Create a freestyle job**
-
-
-**5: Create a Webhook**
+**6: Create a Webhook**
 
 With webhook, whenever the developper make a change on the code or repository, it will trigger the jenkins automatically and jenkins will pull the code from the github
 
@@ -36,11 +35,11 @@ With webhook, whenever the developper make a change on the code or repository, i
 
 ![3](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/958185d5-2de0-4b73-a36b-84a6f31cf6e9)
 
-**6: Build our project**
+**7: Build our project**
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/1de3fc80-5fd1-4c61-9c9b-b7963dcb60a8)
 
-**6: Connect to our Sonarqube server and install Sonarqube**
+**8: Connect to our Sonarqube server and install Sonarqube**
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/478a5163-1816-440e-91fd-ae39b357804d)
 
