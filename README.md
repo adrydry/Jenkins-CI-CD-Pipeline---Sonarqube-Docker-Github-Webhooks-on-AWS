@@ -69,20 +69,25 @@ Our first build is successfull
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/478a5163-1816-440e-91fd-ae39b357804d)
 
-- update the repository and install Java 17 which is compatible with Sonarqube
+- install Java
 
 - Go to sonarqube.com and download the community Edition with wget link
 
-![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/18938f91-a5d7-4f51-a05c-252cc4bc8a42)
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/6208f809-2826-4fdc-8fa7-f47a14a7856d)
 
+We need to unzip this file:
 
+- Install unzip with: sudo apt install unzip 
 
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/b6250b88-79ca-46cb-b376-121963358253)
 
+- unzip our Sonarqube file
 
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/1442391b-a9c7-47bc-bef4-9c560d732abd)
 
+- Access the sonar sh file
 
-
-
+  
 
 
 
