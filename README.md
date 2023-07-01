@@ -156,7 +156,7 @@ To troubleshoot that, go on Docker server, as a root , open the configuration fi
 - Add the server list and paste the ip of the docker server
 
 
-
+Execute shell on configure
 
 
 
