@@ -85,9 +85,75 @@ We need to unzip this file:
 
 ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/1442391b-a9c7-47bc-bef4-9c560d732abd)
 
-- Access the sonar sh file
+- Access the unzip directory and go to the bin directory. .sonar.sh file is available
 
-  
+   ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/d7557e4c-3216-47ef-a3ba-4320eec5e277)
+
+- Run ./sonar.sh file
+
+  ![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/dfba5fbe-1cbc-4163-ad1a-3f50e72fd4ba)
+
+ **9-Sonarqube is operationnel. Let's verify that by using the ip adress of the sonarqube server on the browser**
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/68726f17-f586-4728-b512-22ee5d8a1d1c)
+
+The default username and password of Sonarqube is **Admin**. We will modify these information at our first login. Access our Sonarqube platform
+
+- Choose to add our project manually. Create a project and click on Set up
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/3c845a10-bd80-4fac-87bb-ef5e405594f2)
+
+Choose our CI tool: Jenkins
+
+Select our Devops tool: Github
+
+Configure analysis
+Create a jenkinsfile: other
+Copy our projectkey
+Click on finish 
+Go to the home account, go to security and create token. Copy the token
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/a2c39219-b73e-413d-9e40-bb8c269d9696)
+
+Go to jenkins, Manage plugins and install the plugins Sonarqube scanner and ssh2 easy
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/dba506b4-e85c-49dc-8091-670869dd3042)
+
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/584b10d0-5919-4729-8d41-0832636bc722)
+
+
+Go to Manage tools on jenkins and add Sonarqube scanner
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/d12c4784-bf3f-4dbe-83df-9f59878c398c)
+
+Go to configuration on jenkins and we will see Sonarqube servers
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/13463e8d-1ef8-4950-a615-439b9c76cfcc)
+
+Go to the pipeline on configure to add a step to execute the sonarqube scanner on build step
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/609ff391-6905-4080-ad36-5f82432d06f1)
+
+Go to congigure system and add jenkins as a server authentification token
+
+Build our pipeline
+
+![1](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/c9ee7955-5498-4c2c-8895-004a51620cd9)
+![14](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/44fb51e4-1dba-43db-9fc5-542d6610660b)
+
+
+Now that our code passed the security analysis, we can deploy it on our Docker server
+
+- Install Docker on our Docker server
+
+
+
+
+
+
+
+
 
 
 
