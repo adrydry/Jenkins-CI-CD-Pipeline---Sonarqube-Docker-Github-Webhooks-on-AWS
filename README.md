@@ -147,8 +147,13 @@ Now that our code passed the security analysis, we can deploy it on our Docker s
 
 - Install Docker on our Docker server
 
+- Go to jenkins server. Switch as a user jenkins and try to ssh to the docker server. It will not work.
+To troubleshoot that, go on Docker server, as a root , open the configuration file and enable password authentification by remove the # and by changin yes to no
 
 
+- Go to the pipeline and look at server group center
+
+- Add the server list and paste the ip of the docker server
 
 
 
