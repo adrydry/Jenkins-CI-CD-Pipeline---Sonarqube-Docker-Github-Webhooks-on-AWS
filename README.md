@@ -145,25 +145,48 @@ Build our pipeline
 
 Now that our code passed the security analysis, we can deploy it on our Docker server
 
+![15](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/ca2d2ceb-bc4e-4f2e-8620-44f4c674cba8)
+
 - Install Docker on our Docker server
+  
+![16](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/24e015eb-e50c-469c-b8ce-e87e25b3d476)
+
 
 - Go to jenkins server. Switch as a user jenkins and try to ssh to the docker server. It will not work.
+  
+![17](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/d0c4a628-18c4-44a0-942a-4f406dbbb25c)
+
 To troubleshoot that, go on Docker server, as a root , open the configuration file and enable password authentification by remove the # and by changin yes to no
 
+![19](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/75b1df30-65f8-4a21-a5a7-85d1afc832d6)
+
+
+![20](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/5653e3e8-c5ba-4c10-b7e9-d0018c1a3e4c)
+
+![22](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/91b9f013-ee23-4881-9401-935b57f602eb)
 
 - Go to the pipeline and look at server group center
 
 - Add the server list and paste the ip of the docker server
 
+![25](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/863cf7d1-90eb-4ada-987c-eb909b84f037)
 
-Execute shell on configure
+Execute shell on configure, apply and save. build the pipeline
+
+![26](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/ad3d3be0-aeda-4b9f-95aa-abf241d518a3)
+
+![28](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/96447619-f709-4462-a882-a391661289b9)
 
 
+**Integrate Docker in the pipeline**
+
+![31](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/c77de360-1e75-4519-8c4f-df57a4d9ccd6)
 
 
+Build of the project
 
+![34](https://github.com/adrydry/Jenkins-CI-CD-Pipeline---Sonarqube-Docker-Github-Webhooks-on-AWS/assets/102819001/033f2f9d-f6fc-4bcd-8d20-82729fe0df69)
 
-
-
+The application is accessible now on the browser
 
 
