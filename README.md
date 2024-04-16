@@ -1,6 +1,6 @@
 # Jenkins-CI-CD-Pipeline-Sonarqube-Docker-Github-Webhooks-on-AWS
 
-
+In this project, we will integrated Jenkins with many Devops Toolstools like Maven (as a build tool), NodeJS, Github as code repository, Sonarqube as code quality check, Dependency check to run vulnerability scan on librairies, Docker for building and pushing Docker images, and Kubernetes ad deployment server.
 
 
 **1 : Download a static template website and save it**
